@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Super gra</title>
+    <meta name="viewport" content="width=device−width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Sliding Puzzle Game</h1>
+        <div id="gameArea">
+            <div id="board">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div id="controls">
+                <form class="slider">
+                    <p>Rows: <span id="widthLabel">3</span></p>
+                    <label for="widthInput">2</label>
+                    <input type="range" id="widthInput" value="3" min="2" max="6" step="1">
+                    <label>6</label>
+                </form>
+                <form class="slider">
+                    <p>Columns: <span id="heightLabel">3</span></p>
+                    <label for="heightInput">2</label>
+                    <input type="range" id="heightInput" value="3" min="2" max="6" step="1">
+                    <label>6</label>
+                </form>
+                <button id="newGameButton">NEW GAME</button>
+                <h2>Choose another picture:</h2>
+                <div class="gallery">
+                    <img class="item" src="./images/1min.jpg" alt="Image 1" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/2min.jpg" alt="Image 2" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/3min.jpg" alt="Image 3" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/4min.jpg" alt="Image 4" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/5min.jpg" alt="Image 5" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/6min.jpg" alt="Image 6" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/7min.jpg" alt="Image 7" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/8min.jpg" alt="Image 8" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/9min.jpg" alt="Image 9" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/10min.jpg" alt="Image 10" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/11min.jpg" alt="Image 11" onclick="pickImage(this.src)">
+                    <img class="item" src="./images/12min.jpg" alt="Image 12" onclick="pickImage(this.src)">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

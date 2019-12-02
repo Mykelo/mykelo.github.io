@@ -1,0 +1,111 @@
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    width: "80%"
+}
+
+@media(min-width: 1310px) {
+    #gameArea {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+h1 {
+    font-size: 30px;    
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#canvas {
+    border:1px solid #000000;
+    align-self: center;
+}
+
+#board {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.gallery {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item {
+    margin: 5px;
+    width: 80%;
+}
+
+.item:hover {
+    -moz-box-shadow: 0 0 12px rgb(124, 124, 124);
+    -webkit-box-shadow: 0 0 12px rgb(116, 116, 116);
+    box-shadow: 0 0 12px rgb(122, 122, 122);
+}
+
+#newGameButton {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 50px;
+    width: 50%;
+}
+
+.slider {
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000
+}
+
+.slider > p {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+@media(min-width: 460px) {
+    .item {
+        width: initial;
+    }
+
+    #newGameButton {
+        width: 100px
+    }
+
+    .slider {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+.inputLabel {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
