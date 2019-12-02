@@ -92,19 +92,18 @@ function newGame(width, height, xTiles, yTiles, img) {
             grid.render(ctx)
 
             if (grid.checkSolved()) {
-                console.log('YOU SOLVED IT')
                 ctx.globalAlpha = 0.7;
                 ctx.fillStyle = "#BEBEBE";
-                ctx.fillRect(0, 0, width, height);
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
 
                 ctx.font = "40px Comic Sans MS";
                 ctx.fillStyle = "green";
                 ctx.textAlign = "center";
                 ctx.fillText("You solved it", canvas.width / 2, canvas.height / 2);
+            } else {
+                grid.highlightTile(-1, -1)
+                grid.render(ctx)
             }
-
-            grid.highlightTile(-1, -1)
-            grid.render(ctx)
         }
     }
 }
